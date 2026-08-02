@@ -1,23 +1,81 @@
 aid: petfolk
 name: Petfolk
-description: 'Petfolk is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Petfolk is a Charlotte, North Carolina based veterinary care company that operates a network of
+  modern, company-owned pet care centers across the US Southeast and Texas, paired with a consumer
+  mobile app. Founded and led by veterinarian Dr. Audrey Wystrach, Petfolk provides primary and
+  wellness care, sick and urgent care, dentistry, surgery, spay and neuter, vaccinations and
+  diagnostics for dogs and cats, delivered under a "gentle handling" clinical model with
+  seven-day-a-week hours and published, transparent pricing. The Petfolk iOS and Android app lets
+  pet parents book in-person or virtual appointments, message their care team around the clock,
+  request medications and access their pet's medical records; a paid PetfolkCare membership layers
+  on 24/7 veterinary support and per-visit savings. The company raised a $40M Series B in October
+  2023 led by Movendo Capital, with White Star Capital and Idea Farm Ventures participating.
+  Petfolk is a consumer veterinary services operator, not an API provider: as of this profiling
+  pass it publishes no public developer portal, API documentation, OpenAPI/GraphQL contract, SDKs
+  or MCP server. It does publish a hand-authored llms.txt at the site root, which is the company's
+  only machine-readable, agent-facing surface.
+image: https://images.ctfassets.net/hivti1x80euy/69WzFpgg5SgRxcyeM6VeRP/5d82cdb7cf00e502733318a0125f3816/social_og_72369bd6-c9fe-4947-bb69-891c1daf2cb5.webp
 url: https://raw.githubusercontent.com/api-evangelist/petfolk/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
-specificationVersion: '0.20'
+specificationVersion: '0.21'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
-- Company
+  - veterinary
+  - veterinary-care
+  - animal-health
+  - pet-care
+  - pet-health
+  - healthcare
+  - telehealth
+  - virtual-care
+  - urgent-care
+  - clinics
+  - membership
+  - consumer-health
+  - mobile-app
+  - north-carolina
 apis: []
 maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
-- FN: APIs.json
-  email: info@apis.io
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+  - FN: APIs.json
+    email: info@apis.io
 common:
-- type: Website
-  url: https://forgeglobal.com/petfolk_stock/
+  - type: DomainSecurity
+    url: security/petfolk-domain-security.yml
+  - type: Website
+    url: https://petfolk.com/
+  - type: Login
+    url: https://petfolk.com/login
+  - type: SignUp
+    url: https://petfolk.com/book
+  - type: Support
+    url: https://petfolk.com/contact
+  - type: FAQ
+    url: https://petfolk.com/faq
+  - type: Blog
+    url: https://petfolk.com/petfolklore
+  - type: Pricing
+    url: https://petfolk.com/services/pricing
+  - type: PressRoom
+    url: https://petfolk.com/pressroom
+  - type: Careers
+    url: https://petfolk.com/careers
+  - type: TermsOfService
+    url: https://petfolk.com/terms-of-service
+  - type: PrivacyPolicy
+    url: https://petfolk.com/privacy-policy
+  - type: LLMsTxt
+    url: llms/petfolk-llms.txt
+  - type: WellKnown
+    url: well-known/petfolk-well-known.yml
+  - type: SecondaryMarket
+    url: https://forgeglobal.com/petfolk_stock/
+x-enrichment:
+  date: '2026-08-02'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1

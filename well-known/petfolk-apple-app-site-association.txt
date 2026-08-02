@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["2R976DASFR.com.petfolk.development", "2R976DASFR.com.petfolk.ios.PetFolk"],
+        "components": [
+          {
+            "/": "/links/*",
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["2R976DASFR.com.petfolk.development", "2R976DASFR.com.petfolk.ios.PetFolk"]
+  }
+}

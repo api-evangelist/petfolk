@@ -1,0 +1,20 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.petfolk.android.app.qa",
+      "sha256_cert_fingerprints":
+      ["84:98:9A:A1:01:61:C7:E9:A7:C2:E4:AE:2E:C6:90:58:16:36:91:48:92:F0:E2:6A:2D:BD:BE:ED:70:D5:A8:84"]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.petfolk.android.app",
+      "sha256_cert_fingerprints":
+      ["CB:F7:B1:63:CF:33:83:F4:FA:A3:9C:01:94:76:C2:1A:D3:63:58:24:ED:32:20:AC:E0:72:E5:7E:B2:76:66:EC"]
+    }
+  }
+]

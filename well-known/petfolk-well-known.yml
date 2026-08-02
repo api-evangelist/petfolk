@@ -1,0 +1,57 @@
+generated: '2026-08-02'
+method: probed
+source: https://petfolk.com/.well-known/
+host: https://petfolk.com
+notes: >-
+  Petfolk publishes no API-oriented discovery documents. The only /.well-known/ resources served are
+  the two mobile-app association files (Apple universal links + Android app links) for the Petfolk
+  iOS and Android apps. No security.txt (RFC 9116), no OIDC/OAuth discovery, no api-catalog
+  (RFC 9727), no ai-plugin.json, and no A2A agent card at either the canonical or legacy path.
+documents:
+  - path: /.well-known/apple-app-site-association
+    status: 200
+    file: petfolk-apple-app-site-association.txt
+    content_type: text/plain
+    spec: Apple Universal Links / associated domains
+    json_valid: false
+    defect: >-
+      Body is JSON-shaped but does not parse — there is a trailing comma after
+      "/": "/links/*" in applinks.details[0].components[0], and it is served as text/plain
+      rather than application/json. Apple's associated-domains parser requires strict JSON, so
+      this is a real defect on Petfolk's side, not a harvest error. Saved verbatim as served,
+      with a .txt extension because the bytes are not valid JSON.
+    app_ids:
+      - 2R976DASFR.com.petfolk.development
+      - 2R976DASFR.com.petfolk.ios.PetFolk
+  - path: /.well-known/assetlinks.json
+    status: 200
+    file: petfolk-assetlinks.json
+    spec: Android App Links (Digital Asset Links)
+    json_valid: true
+    packages:
+      - com.petfolk.android.app
+      - com.petfolk.android.app.qa
+  - path: /.well-known/security.txt
+    status: 404
+    spec: RFC 9116
+  - path: /.well-known/openid-configuration
+    status: 404
+    spec: OpenID Connect Discovery 1.0
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    spec: RFC 8414
+  - path: /.well-known/api-catalog
+    status: 404
+    spec: RFC 9727
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+    spec: A2A 1.0.0
+  - path: /.well-known/agent.json
+    status: 404
+    spec: A2A pre-0.3 legacy
+x-evidence:
+  fetched: '2026-08-02'
+  host: petfolk.com
+  method: HTTPS GET per path, status recorded as observed

@@ -1,0 +1,26 @@
+# Petfolk
+
+> Veterinary clinics offering in-person, urgent, and virtual pet care nationwide.
+
+- [Petfolk - Veterinary Clinics and Mobile App](https://petfolk.com/): Veterinary care in modern clinics or virtually via app.
+- [Locations](https://petfolk.com/locations): Browse and select your closest Petfolk clinic.
+- [Book Appointment](https://petfolk.com/book): Book an in-person or virtual pet care appointment.
+- [Primary Care](https://petfolk.com/services/primary-care): Annual exams, vaccines, labs, and wellness.
+- [Urgent Care](https://petfolk.com/services/urgent-care): Same-day help for issues needing fast attention.
+- [Dental Care](https://petfolk.com/services/dental-care): Dental cleanings, x-rays, and procedures.
+- [Spay & Neuter](https://petfolk.com/services/spay-neuter): Surgical sterilization services and recovery guidance.
+- [Vaccinations](https://petfolk.com/services/pet-vaccinations): Core and lifestyle vaccine schedules and advice.
+- [Membership](https://petfolk.com/membership): Annual plan covering wellness exams and discounts.
+- [Mobile App](https://petfolk.com/ads/download-mobile-app): iOS and Android app for pet care access.
+- [Pricing](https://petfolk.com/services/pricing): Transparent costs for common services.
+- [Services Overview](https://petfolk.com/services): Full breakdown of services offered.
+- [About Us](https://petfolk.com/about-us): Meet the team behind Petfolk’s veterinary model.
+- [Careers](https://petfolk.com/careers): Explore open roles and apply to join the team.
+- [Contact](https://petfolk.com/contact): Email and contact form for support.
+- [FAQs](https://petfolk.com/faq): Answers to common care and membership questions.
+- [Petfolklore Blog](https://petfolk.com/petfolklore): Articles on pet care, health, and education.
+- [What Is Pet Insurance?](https://petfolk.com/petfolklore/what-is-pet-insurance-and-why-do-i-need-it): Overview of pet insurance benefits.
+- [Vet Check-Up Costs](https://petfolk.com/petfolklore/vet-checkup-costs): Typical cost breakdown for vet visits.
+- [Terms of Service](https://petfolk.com/terms-of-service): User agreement and terms for services.
+- [Privacy Policy](https://petfolk.com/privacy-policy): How Petfolk collects and uses personal data.
+- [Membership Terms](https://petfolk.com/membership/terms-of-service): Legal terms for PetfolkCare membership.
