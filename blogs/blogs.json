@@ -1,0 +1,14 @@
+{
+  "repo": "petfolk",
+  "feeds": [
+    {
+      "source": "https://petfolk.com/faq",
+      "feed_url": "https://petfolk.com/faq",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-08-06T14:08:46Z"
+}
