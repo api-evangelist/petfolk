@@ -15,6 +15,17 @@ description: >-
   pass it publishes no public developer portal, API documentation, OpenAPI/GraphQL contract, SDKs
   or MCP server. It does publish a hand-authored llms.txt at the site root, which is the company's
   only machine-readable, agent-facing surface.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://images.ctfassets.net/hivti1x80euy/69WzFpgg5SgRxcyeM6VeRP/5d82cdb7cf00e502733318a0125f3816/social_og_72369bd6-c9fe-4947-bb69-891c1daf2cb5.webp
 url: https://raw.githubusercontent.com/api-evangelist/petfolk/refs/heads/main/apis.yml
 x-type: company
