@@ -34,20 +34,20 @@ specificationVersion: '0.23'
 created: '2026-08-02'
 modified: '2026-08-02'
 tags:
-  - veterinary
+  - Veterinary
   - veterinary-care
-  - animal-health
-  - pet-care
-  - pet-health
-  - healthcare
-  - telehealth
-  - virtual-care
-  - urgent-care
-  - clinics
-  - membership
-  - consumer-health
-  - mobile-app
-  - north-carolina
+  - Animal Health
+  - Pet Care
+  - Pet Health
+  - Healthcare
+  - Telehealth
+  - Virtual Care
+  - Urgent Care
+  - Clinics
+  - Membership
+  - Consumer Health
+  - Mobile App
+  - North Carolina
 tags_raw:
   - veterinary
   - veterinary-care
