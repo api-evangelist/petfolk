@@ -26,6 +26,18 @@ deliveryModel:
   - pricing
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://images.ctfassets.net/hivti1x80euy/69WzFpgg5SgRxcyeM6VeRP/5d82cdb7cf00e502733318a0125f3816/social_og_72369bd6-c9fe-4947-bb69-891c1daf2cb5.webp
 url: https://raw.githubusercontent.com/api-evangelist/petfolk/refs/heads/main/apis.yml
 x-type: company
