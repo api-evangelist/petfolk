@@ -64,37 +64,85 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Petfolk is a Charlotte, North Carolina based veterinary care company operating modern, company-owned
-pet care centers across the US Southeast and Texas, paired with a consumer iOS/Android app for
-booking, 24/7 care-team messaging, medication requests and pet medical records. Founded and led by
-veterinarian Dr. Audrey Wystrach; raised a $40M Series B in October 2023 led by Movendo Capital.
+Petfolk is a Charlotte, North Carolina based veterinary care company that operates a network of modern, company-owned pet care centers across the US Southeast and Texas, paired with a consumer mobile app. Founded and led by veterinarian Dr. Audrey Wystrach, Petfolk provides primary and wellness care, sick and urgent care, dentistry, surgery, spay and neuter, vaccinations and diagnostics for dogs and cats, delivered under a "gentle handling" clinical model with seven-day-a-week hours and published, transparent pricing. The Petfolk iOS and Android app lets pet parents book in-person or virtual appointments, message their care team around the clock, request medications and access their pet's medical records; a paid PetfolkCare membership layers on 24/7 veterinary support and per-visit savings. The company raised a $40M Series B in October 2023 led by Movendo Capital, with White Star Capital and Idea Farm Ventures participating. Petfolk is a consumer veterinary services operator, not an API provider: as of this profiling pass it publishes no public developer portal, API documentation, OpenAPI/GraphQL contract, SDKs or MCP server. It does publish a hand-authored llms.txt at the site root, which is the company's only machine-readable, agent-facing surface.
 
-## API posture
+**Areas:** Veterinary · veterinary-care · Animal Health · Pet Care · Pet Health · Healthcare · Telehealth · Virtual Care · Urgent Care · Clinics · Membership · Consumer Health
 
-Petfolk is a consumer veterinary services operator, **not an API provider**. As of the 2026-08-02
-enrichment pass there is no public developer portal, no API documentation, no OpenAPI / GraphQL /
-AsyncAPI contract, no SDKs or packages on any public registry, no MCP server and no A2A agent card.
-Contract discovery was run against `petfolk.com` (site root and `/api*`, `/graphql`, `/openapi.json`,
-`/swagger.json`, `/api-docs`, `/docs`, `/redoc`) and against the `api.`, `developer.`, `docs.`,
-`app.`, `status.` and `trust.` subdomains — all miss or do not resolve.
+## Petfolk on APIs.io
 
-What Petfolk *does* publish that is machine-readable:
+Everything profiled for Petfolk is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/petfolk/](https://apis.io/providers/petfolk/)** — or go straight to one of the APIs or properties below.
 
-- **`llms.txt`** — a hand-authored agent-facing site map at <https://petfolk.com/llms.txt>
-  (`llms/petfolk-llms.txt`). This is the company's only agent surface.
-- **Mobile app association files** — Apple universal links and Android app links under
-  `/.well-known/` (`well-known/`). Note: the Apple `apple-app-site-association` document is
-  **malformed JSON** (trailing comma), which will break universal-link association.
+### Published properties
 
-## Artifacts
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-| Dir | File | Method |
-|---|---|---|
-| `llms/` | `petfolk-llms.txt` | searched (verbatim) |
-| `well-known/` | `petfolk-well-known.yml`, `petfolk-apple-app-site-association.json`, `petfolk-assetlinks.json` | probed |
-| `security/` | `petfolk-domain-security.yml` | probed |
+#### Security (1)
 
-## Links
+Authentication, trust centre, and vulnerability disclosure.
 
-- <https://petfolk.com/>
-- <https://forgeglobal.com/petfolk_stock/> (secondary-market listing — harvest source)
+- [Petfolk Domain Security](https://apis.io/security/petfolk/petfolk-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://petfolk.com/)
+- [Pricing](https://petfolk.com/services/pricing)
+- [Sign up](https://petfolk.com/book)
+- [Support](https://petfolk.com/contact)
+- [Blog](https://petfolk.com/petfolklore)
+- [Terms of service](https://petfolk.com/terms-of-service)
+- [Privacy policy](https://petfolk.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 15.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 44.7 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.9** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/petfolk/](https://apis.io/providers/petfolk/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Petfolk: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/petfolk/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
